@@ -50,7 +50,7 @@ Environments:
     Sshuser: \"$SSHUSER\"
     Repodir: \"$REPODIR\"
     #additional settings
-    Domain: \"\"
+    Domain: \"$HOST\"
     Sshport: \"\"
     Composerpath: \"\"
     PhpPath: \"\"
