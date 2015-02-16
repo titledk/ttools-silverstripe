@@ -14,7 +14,7 @@ Terminal helpers for working with SilverStripe, including, but not limited to:
 1. If you're creating a new project, create a new git repository, and clone it locally
 2. Run the following command from your repository root:
 
-	git submodule add https://github.com/titledk/ttools-silverstripe.git ttools/silverstripe; ./ttools/silverstripe/install/install-ttools.sh;
+		git submodule add https://github.com/titledk/ttools-silverstripe.git ttools/silverstripe; ./ttools/silverstripe/install/install-ttools.sh;
 
 
 **NOTE:** If you're adding this to an existing project, you'll need to have all SilverStripe files inside of a `public` directory.
