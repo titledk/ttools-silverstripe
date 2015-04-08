@@ -141,6 +141,11 @@ then
 	rm public/web.config
 	rm public/README.md
 	rm public/favicon.ico
+	
+	#also removin the simple theme (we usually don't want it)
+	cd public;
+	composer remove silverstripe-themes/simple;
+	cd ..;
 fi
 
 
