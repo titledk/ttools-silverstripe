@@ -98,25 +98,12 @@ echo "* Now installing ttools libraries"
 
 #core 
 git submodule add git://github.com/titledk/ttools-core.git ttools/core;
-#(needs to be on the "onedir" branch for now)
-cd ttools/core;
-git checkout onedir;
-cd ../..;
 
 #git helpers
 git submodule add https://github.com/titledk/ttools-githelpers.git ttools/githelpers
-#(needs to be on the "onedir" branch for now)
-cd ttools/githelpers;
-git checkout onedir;
-cd ../..;
 
 #sitesync core
 git submodule add https://github.com/titledk/ttools-sitesync-core.git ttools/sitesync-core
-#(needs to be on the "onedir" branch for now)
-cd ttools/sitesync-core;
-git checkout onedir;
-cd ../..;
-
 
 #sitesync silverstripe
 git submodule add https://github.com/titledk/ttools-sitesync-silverstripe.git ttools/sitesync-silverstripe
