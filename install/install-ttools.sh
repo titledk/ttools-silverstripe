@@ -87,7 +87,7 @@ Menu:
     Item2:
       Title: Deploy Live Site
       Command: \"ttools/githelpers/local/git-pull-remote.sh Live ttools/githelpers/lib/composer-install.sh\"
-ServerSync:
+Sitesync:
   FrameworkModule: 'ttools/sitesync-silverstripe'
 
 " > ttools/config.yml
