@@ -6,8 +6,14 @@ Terminal helpers for working with SilverStripe, including, but not limited to:
 * ssh-based deployment to various environments
 * asset & database sync between all environments (also local)
 
+The installer installs the following modules for you:
 
-**UNDER DEVELOPMENT**
+* https://github.com/titledk/ttools-core
+* https://github.com/titledk/ttools-githelpers
+* https://github.com/titledk/ttools-sitesync-core
+* https://github.com/titledk/ttools-sitesync-silverstripe
+* https://github.com/silverstripe/sspak
+
 
 ## Installation (& kicking off a new SilverStripe project)
 
