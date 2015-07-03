@@ -2,7 +2,6 @@
 
 echo "Wiping silverstripe-cache dir"
 echo "Note this only works if your user has the correct permissions"
-echo ""
 
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd ../../.. && pwd )";
 MODULEDIR="$BASEDIR/ttools/silverstripe";
