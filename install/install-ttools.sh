@@ -13,7 +13,7 @@ echo ''
 
 
 echo "This installer assumes you've already got a server set up."; 
-echo "If you don't have a server set up yet, you can just enter expected information";
+echo "If you don't have a server set up yet, you can just enter expected information (or leave the fields empty)";
 echo "- you can always change this in the config later.";
 
 
@@ -42,7 +42,13 @@ echo "* Now creating project configuration for $PROJECTNAME"
 
 
 
-echo "Projectname: \"$PROJECTNAME\"
+echo "
+##############################################################
+# Terminal Tools Configuration for \"$PROJECTNAME\"
+# Add environments under \"Evnironments\"
+# Adjust the menu under \"Menu\" to your needs
+##############################################################
+Projectname: \"$PROJECTNAME\"
 Environments:
   Live:
     #required
@@ -60,9 +66,12 @@ Menu:
   Heading1:
     Title: Local
     Item1:
-      Title: Git Pull, Sync Submodules & Composer install
-      Command: \"ttools/githelpers/lib/git-pull.sh ttools/githelpers/lib/composer-install.sh\"
+      Title: Local \"deploy\" (git pull etc.)
+      Command: \"ttools/githelpers/lib/git-pull.sh ttools/silverstripe/lib/deploy.sh\"
     Item2:
+      Title: Wipe cache
+      Command: \"ttools/silverstripe/lib/wipe-cache.sh\"
+    Item3:
       Title: Overwrite Local Site with Database & Assets from Live Site
       Command: \"ttools/sitesync-core/local/sync-environments.sh Live Local\"
   Heading2:
@@ -72,7 +81,7 @@ Menu:
       Command: \"ttools/core/local/ssh.sh Dev\"
     Item2:
       Title: Deploy Dev Site
-      Command: \"ttools/githelpers/local/git-pull-remote.sh Dev ttools/githelpers/lib/composer-install.sh\"
+      Command: \"ttools/githelpers/local/git-pull-remote.sh Dev ttools/silverstripe/lib/deploy.sh\"
     Item3:
       Title: Push Database & Assets to Dev Site
       Command: \"ttools/sitesync-core/local/sync-environments.sh Local Dev\"
@@ -86,7 +95,7 @@ Menu:
       Command: \"ttools/core/local/ssh.sh Live\"
     Item2:
       Title: Deploy Live Site
-      Command: \"ttools/githelpers/local/git-pull-remote.sh Live ttools/githelpers/lib/composer-install.sh\"
+      Command: \"ttools/githelpers/local/git-pull-remote.sh Live ttools/silverstripe/lib/deploy.sh\"
 Sitesync:
   FrameworkModule: 'ttools/sitesync-silverstripe'
 
