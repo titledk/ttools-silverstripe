@@ -6,6 +6,14 @@
 
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd ../../.. && pwd )";
 
+#environment specific variables
+ENV=$1;
+if [ -z "${1}" ]; then
+	ENV=LOCAL;
+fi
+ENVVARS="$BASEDIR/ttools/core/lib/vars-for-env.sh $ENV"
+eval `$ENVVARS`
+
 
 cd $BASEDIR;
 
@@ -22,7 +30,9 @@ ttools/githelpers/lib/composer-install.sh $1;
 #rebuilding the database
 #this has not always worked for me, see https://github.com/silverstripe/silverstripe-framework/issues/2822
 #but I'm hoping that wiping the cache should fix the issue
-php public/framework/cli-script.php /dev/build
+
+echo "php path is $ENV_PHPPATH";
+$ENV_PHPPATH public/framework/cli-script.php /dev/build
 
 echo "";
 echo "Deployment done. Status:"
