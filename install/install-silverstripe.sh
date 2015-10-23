@@ -47,10 +47,13 @@ public/cms/
 public/framework/
 public/themes/simple
 public/themes/tutorial
+public/reports/
+public/siteconfig/
 logs
 rotatingbackups
 temp
 .idea
+**/bower_components
 " > .gitignore;
 
 
@@ -142,7 +145,7 @@ then
 	rm public/README.md
 	rm public/favicon.ico
 	
-	#also removin the simple theme (we usually don't want it)
+	#also removing the simple theme (we usually don't want it)
 	cd public;
 	composer remove silverstripe-themes/simple;
 	cd ..;
