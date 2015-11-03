@@ -6,15 +6,6 @@ Terminal helpers for working with SilverStripe, including, but not limited to:
 * ssh-based deployment to various environments
 * asset & database sync between all environments (also local)
 
-The installer installs the following modules for you:
-
-* https://github.com/titledk/ttools-core
-* https://github.com/titledk/ttools-githelpers
-* https://github.com/titledk/ttools-sitesync-core
-* https://github.com/titledk/ttools-sitesync-silverstripe
-* https://github.com/silverstripe/sspak
-
-
 ## Installation (& kicking off a new SilverStripe project)
 
 1. If you're creating a new project, create a new git repository, and clone it locally
@@ -25,7 +16,28 @@ The installer installs the following modules for you:
 
 **NOTE:** If you're adding this to an existing project, you'll need to have all SilverStripe files inside of a `public` directory.
 
+## Learn more - Presentation from StripeCon 2015
 
+![Check out the video presentation](https://i.vimeocdn.com/video/540923620.webp?mw=960&mh=540)
+
+[![Check out the video presentation](https://i.vimeocdn.com/video/540923620.webp?mw=960&mh=540)](https://vimeo.com/143360071)
+
+
+* [Video](https://vimeo.com/143360071)
+* [Slides](http://www.anselm.dk/static/talks/stripecon-2015/ttools.pdf)
+
+
+
+
+## Details
+
+The installer installs the following modules for you:
+
+* https://github.com/titledk/ttools-core
+* https://github.com/titledk/ttools-githelpers
+* https://github.com/titledk/ttools-sitesync-core
+* https://github.com/titledk/ttools-sitesync-silverstripe
+* https://github.com/silverstripe/sspak
 
 
 
