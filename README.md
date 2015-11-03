@@ -21,7 +21,7 @@ Terminal helpers for working with SilverStripe, including, but not limited to:
 ![Check out the video presentation](https://i.vimeocdn.com/video/540923620.png)
 
 
-* [See the video](https://vimeo.com/143360071)
+* [Watch the video](https://vimeo.com/143360071)
 * [Download the slides](http://www.anselm.dk/static/talks/stripecon-2015/ttools.pdf)
 
 
