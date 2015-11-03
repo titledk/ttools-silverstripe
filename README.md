@@ -18,13 +18,11 @@ Terminal helpers for working with SilverStripe, including, but not limited to:
 
 ## Learn more - Presentation from StripeCon 2015
 
-![Check out the video presentation](https://i.vimeocdn.com/video/540923620.webp?mw=960&mh=540)
-
-[![Check out the video presentation](https://i.vimeocdn.com/video/540923620.webp?mw=960&mh=540)](https://vimeo.com/143360071)
+![Check out the video presentation](https://i.vimeocdn.com/video/540923620.png)
 
 
-* [Video](https://vimeo.com/143360071)
-* [Slides](http://www.anselm.dk/static/talks/stripecon-2015/ttools.pdf)
+* [See the video](https://vimeo.com/143360071)
+* [Download the slides](http://www.anselm.dk/static/talks/stripecon-2015/ttools.pdf)
 
 
 
