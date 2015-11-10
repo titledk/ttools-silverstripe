@@ -67,7 +67,9 @@ define('SS_DATABASE_SERVER', 'localhost');
 define('SS_DATABASE_USERNAME', 'root');
 define('SS_DATABASE_PASSWORD', 'root');
 define('SS_DATABASE_NAME', '$PROJECT_URLSAFE');
-define('SS_DATABASE_CLASS', 'MySQLPDODatabase');
+
+//enable this for SilverStripe 3.2+
+//define('SS_DATABASE_CLASS', 'MySQLPDODatabase');
 
 define('SS_ENVIRONMENT_TYPE', 'live');
 
