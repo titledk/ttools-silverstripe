@@ -12,27 +12,14 @@ echo 'for SilverStripe: Installer'
 echo ''
 
 
-echo "This installer assumes you've already got a server set up."; 
-echo "If you don't have a server set up yet, you can just enter expected information (or leave the fields empty)";
-echo "- you can always change this in the config later.";
-
-
-
-
 echo "";
 
 echo "Please enter the project name:"
 read PROJECTNAME
 
 
-echo "Please enter the host name of your server:"
+echo "Please enter the host name of your server (can be left blank):"
 read HOST
-
-echo "Please enter your SSH user:"
-read SSHUSER
-
-echo "Please enter the path that your repository is checked out to on the server:"
-read REPODIR
 
 
 
@@ -53,8 +40,8 @@ Environments:
   Live:
     #required
     Host: \"$HOST\"
-    Sshuser: \"$SSHUSER\"
-    Repodir: \"$REPODIR\"
+    Sshuser: \"SSHUSER\"
+    Repodir: \"REPODIR\"
     #additional settings
     Domain: \"$HOST\"
     Sshport: \"\"
