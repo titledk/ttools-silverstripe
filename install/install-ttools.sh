@@ -32,7 +32,7 @@ echo "* Now creating project configuration for $PROJECTNAME"
 echo "
 ##############################################################
 # Terminal Tools Configuration for \"$PROJECTNAME\"
-# Add environments under \"Evnironments\"
+# Add environments under \"Environments\"
 # Adjust the menu under \"Menu\" to your needs
 ##############################################################
 Projectname: \"$PROJECTNAME\"
