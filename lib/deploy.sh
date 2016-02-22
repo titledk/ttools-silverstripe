@@ -25,7 +25,7 @@ echo "";
 ttools/silverstripe/lib/wipe-cache.sh;
 
 #composer install - can be supplied with an environement variable
-ttools/githelpers/lib/composer-install.sh --no-dev $1;
+ttools/githelpers/lib/composer-install.sh $1;
 
 #rebuilding the database
 #this has not always worked for me, see https://github.com/silverstripe/silverstripe-framework/issues/2822
