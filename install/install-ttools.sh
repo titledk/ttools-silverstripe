@@ -54,7 +54,7 @@ Menu:
     Title: Local
     Item1:
       Title: Local \"deploy\" (git pull etc.)
-      Command: \"ttools/githelpers/lib/git-pull.sh ttools/silverstripe/lib/deploy.sh\"
+      Command: \"ttools/silverstripe/local/deploy.sh\"
     Item2:
       Title: Wipe cache
       Command: \"ttools/silverstripe/lib/wipe-cache.sh\"
@@ -68,7 +68,7 @@ Menu:
       Command: \"ttools/core/local/ssh.sh Dev\"
     Item2:
       Title: Deploy Dev Site
-      Command: \"ttools/githelpers/local/git-pull-remote.sh Dev ttools/silverstripe/lib/deploy.sh\"
+      Command: \"ttools/silverstripe/local/deploy.sh Dev\"
     Item3:
       Title: Push Database & Assets to Dev Site
       Command: \"ttools/sitesync-core/local/sync-environments.sh Local Dev\"
@@ -82,7 +82,7 @@ Menu:
       Command: \"ttools/core/local/ssh.sh Live\"
     Item2:
       Title: Deploy Live Site
-      Command: \"ttools/githelpers/local/git-pull-remote.sh Live ttools/silverstripe/lib/deploy.sh\"
+      Command: \"ttools/silverstripe/local/deploy.sh Live\"
 Sitesync:
   FrameworkModule: 'ttools/sitesync-silverstripe'
 

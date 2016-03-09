@@ -50,7 +50,6 @@ public/themes/tutorial
 public/reports/
 public/siteconfig/
 logs
-rotatingbackups
 temp
 .idea
 **/bower_components

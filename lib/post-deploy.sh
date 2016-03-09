@@ -1,8 +1,8 @@
 #!/bin/bash
-# SilverStripe deploy script
+# SilverStripe post deploy script
 # Does all the things needed after a git pull on the server
 # Add to config.yml like this:
-# Command: "ttools/githelpers/local/git-pull-remote.sh Live ttools/silverstripe/lib/deploy.sh;"
+# Command: "ttools/githelpers/local/git-pull-remote.sh Live ttools/silverstripe/lib/post-deploy.sh;"
 
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd ../../.. && pwd )";
 
@@ -18,20 +18,19 @@ eval `$ENVVARS`
 cd $BASEDIR;
 
 echo "";
-echo "Running SilverStripe deploy script...";
-echo "";
+echo "Running SilverStripe post deploy script...";
 
 #wipe cache
 ttools/silverstripe/lib/wipe-cache.sh;
 
 #composer install - can be supplied with an environement variable
-ttools/githelpers/lib/composer-install.sh $1;
+ttools/silverstripe/lib/composer-install.sh $1;
 
 #rebuilding the database
 #this has not always worked for me, see https://github.com/silverstripe/silverstripe-framework/issues/2822
 #but I'm hoping that wiping the cache should fix the issue
+#echo "php path is $ENV_PHPPATH";
 
-echo "php path is $ENV_PHPPATH";
 $ENV_PHPPATH public/framework/cli-script.php /dev/build
 
 echo "";
