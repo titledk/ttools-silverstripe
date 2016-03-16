@@ -53,35 +53,41 @@ Menu:
   Heading1:
     Title: Local
     Item1:
-      Title: Local \"deploy\" (git pull etc.)
+      Title: Pull code changes
       Command: \"ttools/silverstripe/local/deploy.sh\"
     Item2:
-      Title: Wipe cache
-      Command: \"ttools/silverstripe/lib/wipe-cache.sh\"
+      Title: Back up content
+      Command: \"ttools/sitesync-core/local/backup.sh\"
     Item3:
-      Title: Overwrite Local Site with Database & Assets from Live Site
+      Title: Update content from Dev Site
+      Command: \"ttools/sitesync-core/local/sync-environments.sh Live Dev\"
+    Item4:
+      Title: Update content from Live Site
       Command: \"ttools/sitesync-core/local/sync-environments.sh Live Local\"
+    Item5:
+      Title: Revert content from backup
+      Command: \"ttools/sitesync-core/local/revert-from-backup.sh\"
   Heading2:
     Title: Dev Site
     Item1:
-      Title: SSH Dev Site
+      Title: SSH
       Command: \"ttools/core/local/ssh.sh Dev\"
     Item2:
-      Title: Deploy Dev Site
+      Title: Deploy
       Command: \"ttools/silverstripe/local/deploy.sh Dev\"
     Item3:
-      Title: Push Database & Assets to Dev Site
+      Title: Push Local content
       Command: \"ttools/sitesync-core/local/sync-environments.sh Local Dev\"
     Item4:
-      Title: Overwrite Dev Site with Database & Assets from Live Site
+      Title: Push Live content
       Command: \"ttools/sitesync-core/local/sync-environments.sh Live Dev\"      
   Heading3:
     Title: Live Site
     Item1:
-      Title: SSH Live Site
+      Title: SSH
       Command: \"ttools/core/local/ssh.sh Live\"
     Item2:
-      Title: Deploy Live Site
+      Title: Deploy
       Command: \"ttools/silverstripe/local/deploy.sh Live\"
 Sitesync:
   FrameworkModule: 'ttools/sitesync-silverstripe'
