@@ -39,7 +39,8 @@ The installer installs the following modules for you:
 ## Updating
 
 We keep on developing on Terminal Tools.  
-In order to update to the latest and greatest version, run `./tt` and press `U` (for upgrade).
+In order to update to the latest and greatest version, run `./tt` and press `U` (for upgrade).  
+Alternatively, and on older versions, run `./ttools/core/local/upgrade.sh`.
 
 In case you upgrade from older versions it _could_ be that the `config.yml` structure has changed
 slightly. Make sure to check out `install/install-ttools.sh` for the up-to-date structure.
