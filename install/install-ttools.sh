@@ -60,7 +60,7 @@ Menu:
       Command: \"ttools/sitesync-core/local/backup.sh\"
     Item3:
       Title: Update content from Dev Site
-      Command: \"ttools/sitesync-core/local/sync-environments.sh Live Dev\"
+      Command: \"ttools/sitesync-core/local/sync-environments.sh Dev Local\"
     Item4:
       Title: Update content from Live Site
       Command: \"ttools/sitesync-core/local/sync-environments.sh Live Local\"
