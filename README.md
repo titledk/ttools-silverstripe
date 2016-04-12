@@ -17,7 +17,13 @@ git submodule add https://github.com/titledk/ttools-silverstripe.git ttools/silv
 
 **NOTE:** If you're adding this to an existing project, you'll need to have all SilverStripe files inside of a `public` directory.
 
-## Learn more - Presentation from StripeCon 2015
+## Learn more
+
+### Blog post on SilverStripe.org, April 2016
+
+Read the [blog post](https://www.silverstripe.org/blog/leverage-the-terminal-to-optimize-your-silverstripe-workflows/) about this module for an in-depth review of what you can use it for.
+
+### Presentation from StripeCon 2015
 
 ![Check out the video presentation](https://i.vimeocdn.com/video/540923620.png)
 
