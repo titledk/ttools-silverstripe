@@ -17,6 +17,10 @@ git submodule add https://github.com/titledk/ttools-silverstripe.git ttools/silv
 
 **NOTE:** If you're adding this to an existing project, you'll need to have all SilverStripe files inside of a `public` directory.
 
+## Addons
+
+* [Backups](https://github.com/titledk/ttools-backups) - for scheduled offsite backups
+
 ## Learn more
 
 ### Blog post on SilverStripe.org, April 2016
